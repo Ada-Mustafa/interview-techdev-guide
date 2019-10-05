@@ -1,0 +1,35 @@
+
+import java.util.Arrays;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+/**
+ *
+ * @author user
+ */
+public class Exercicio3 {
+
+    int pesquisaBinaria(int number[], int key) {
+       
+        int begin = 0, fim = number.length-1;
+   
+
+        while (start <= end) {
+                 int middle = (start + (end - start)) / 2;
+            if (number[middle] == key) 
+                return middle;
+            
+        
+            if (number[middle] < key) 
+                start = middle + 1;
+            else 
+                end = middle - 1;
+            }
+        
+        return -1;
+    }
+
+}
